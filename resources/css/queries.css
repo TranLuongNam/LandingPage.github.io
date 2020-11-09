@@ -1,0 +1,147 @@
+@media only screen and (max-width: 1200px) {
+    html {
+        font-size: 16px;
+    }
+    .contacts-infomation,
+    .contacts-work {
+        margin-left: 8px;
+    }
+}
+@media only screen and (max-width: 683px) {
+    h3 {
+        font-size: 16px;
+    }
+}
+@media only screen and (min-width: 660px) and (max-width: 924px) {
+    .product-item .btn {
+        margin-left: 30% !important;
+    }
+}
+@media only screen and (min-width: 925px) and (max-width: 1170px) {
+    .about-picture img {
+        margin-left: 15px;
+    }
+}
+@media only screen and (min-width: 925px) {
+    .mobile-nav {
+        opacity: 0;
+    }
+}
+@media only screen and (min-width: 1170px) {
+    .about-picture img {
+        margin-left: 30px;
+    }
+}
+
+@media only screen and (max-width: 924px) {
+    .header {
+        position: relative;
+        height: 90vh;
+    }
+    .header-logo img {
+        width: 300px;
+    }
+    .main-nav {
+        position: absolute;
+        left: 7%;
+        top: 10%;
+    }
+    .main-nav li {
+        font-size: 90%;
+        margin-top: 20px;
+    }
+    .main-nav {
+        display: none;
+    }
+    .sticky .header-logo img {
+        width: 300px !important;
+    }
+    .header-main-box {
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        margin-top: 15px;
+    }
+    h1 {
+        margin-top: 30px;
+        font-size: 20px;
+        margin-bottom: 60px;
+    }
+    .btn {
+        padding: 8px;
+        border-radius: 10px;
+    }
+    .about-title {
+        font-size: 16px;
+        line-height: 30px;
+    }
+    .about-picture img {
+        margin-left: 10px;
+    }
+    .about-title__item {
+        font-size: 30px;
+    }
+    .product-section .col {
+        width: 70%;
+        margin-left: 17%;
+    }
+    .product-item {
+        height: 280px;
+        width: 85%;
+        margin-left: 20px;
+    }
+    .product-item ul {
+        line-height: 30px;
+    }
+    .product-item ul li {
+        margin: 0;
+        margin-left: 40px !important;
+    }
+    .product-price {
+        font-size: 150%;
+    }
+    .product-item .btn {
+        margin-left: 39% !important;
+    }
+
+    .contacts-infomation {
+        width: 150%;
+        font-size: 80%;
+    }
+
+    .contacts-infomation li i {
+        font-size: 15px;
+    }
+    .contacts-work li {
+        font-size: 160%;
+    }
+    form {
+        margin-left: 25%;
+        margin-top: 5px;
+    }
+    form label {
+        font-size: 15px;
+    }
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        width: 90%;
+        font-size: 85%;
+    }
+    .testimonial .col {
+        width: 95%;
+        text-align: center;
+        margin-left: 5px;
+    }
+    .about-section .col {
+        width: 70%;
+        margin-left: 17%;
+    }
+    .mobile-nav {
+        position: absolute;
+        top: 40px;
+        right: 100px;
+    }
+}

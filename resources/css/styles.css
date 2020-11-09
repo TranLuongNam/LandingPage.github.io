@@ -1,0 +1,398 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #ffffff;
+    color: #5a5a5a;
+    font-family: "Lato", sans-serif;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+}
+
+/* -------------REUSABLE COMPONENTS ---------------*/
+.btn {
+    text-decoration: none;
+    background: #e67e22;
+    padding: 12px 25px;
+    border-radius: 15px;
+    margin: 0 5px;
+    color: #ffffff;
+    width: 30px;
+}
+.btn:hover {
+    background-color: #d35400;
+    transition: all 0.5s;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+h1,
+h2 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+h1 {
+    word-spacing: 3px;
+    color: #ff4f81;
+    line-height: 150%;
+    margin-bottom: 25px;
+    font-weight: 700;
+}
+h2 {
+    color: #ff4f81;
+    font-size: 150%;
+    text-align: center;
+    font-weight: 600;
+}
+h2::after {
+    content: "";
+    display: block;
+    width: 150px;
+    height: 3px;
+    margin: 0 auto;
+    margin-top: 10px;
+    background-color: rgba(255, 79, 129, 0.7);
+}
+h3 {
+    text-align: center;
+    font-size: 150%;
+    word-spacing: 5px;
+    color: #ff4f81;
+    background-color: rgba(2, 33, 64, 0.85);
+    padding: 5px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+.about-section {
+    margin-top: 50px;
+}
+.about-title {
+    text-align: center;
+    font-size: 22px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 65%;
+    margin-left: 20%;
+    line-height: 40px;
+    color: rgba(2, 33, 64, 0.75);
+}
+.small-icon {
+    font-size: 130%;
+    margin-right: 10px;
+}
+
+/* -----------------------HEADER ---------------*/
+.header {
+    background-image: linear-gradient(45deg, rgba(2, 33, 64, 0.85) 55%, rgb(45, 95, 93, 0.9)),
+        url(../image/background4.jpeg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+}
+.header-logo img {
+    width: 350px;
+    float: left;
+    margin-left: 50px;
+    margin-top: -50px;
+}
+.main-nav {
+    float: right;
+    list-style: none;
+    margin-right: 50px;
+    margin-top: 50px;
+}
+.main-nav li {
+    display: inline-block;
+    margin-right: 30px;
+    font-size: 110%;
+    font-weight: 700;
+    transition: all 0.3s;
+}
+.main-nav li:hover,
+.main-nav li::after {
+    border-bottom: 1px solid #ff4f81;
+}
+.main-nav li a {
+    text-decoration: none;
+    color: #ff4f81;
+}
+.header-main-box {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-100%);
+}
+.sticky {
+    background: rgba(2, 33, 64, 0.9);
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+}
+.sticky .header-logo img {
+    width: 300px !important;
+    margin-bottom: -60px;
+
+}
+.sticky .main-nav {
+    margin-top: 50px;
+}
+.mobile-nav {
+    color: yellow;
+    position: absolute;
+    top: 60px;
+    right: 100px;
+    font-size: 25px;
+}
+
+/* -----------------------ABOUT SECTION ---------------*/
+
+.about-picture {
+    position: relative;
+}
+.about-picture img {
+    width: 90%;
+    border-radius: 20px;
+    box-shadow: 0px 7px 10px 5px rgba(87, 85, 206, 0.9);
+}
+.about-title__item {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: #ff4f81;
+    font-weight: bold;
+    transform: translate(-55%, 100%);
+    opacity: 0;
+    transition: all 0.7s;
+}
+.about-picture:hover img,
+.about-picture:active img {
+    opacity: 0.5;
+    transition: all 0.7s;
+}
+.about-picture:hover .about-title__item,
+.about-picture:active .about-title__item {
+    opacity: 1;
+    transform: translate(-55%, -50%);
+    transition: all 0.7s;
+}
+
+/* --------------- PRODUCT SECTIONS ---------------*/
+.product-section {
+    background: #f4f4f4;
+}
+.product-section h2 {
+    padding-top: 50px;
+    margin-bottom: 30px;
+}
+.product-item {
+    height: 350px;
+    background: #eeefff;
+    box-shadow: 5px 5px 10px #e0e0e0;
+    width: 75%;
+    margin-left: 60px;
+    position: relative;
+    border-radius: 10px;
+}
+.product-item ul {
+    margin-top: 20px;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+.product-item ul li {
+    list-style: none;
+    margin-left: 20%;
+}
+.product-price {
+    font-size: 200%;
+    text-align: center;
+    letter-spacing: 2px;
+    margin-top: 20px;
+}
+.product-price span {
+    font-size: 75%;
+    text-align: center;
+}
+.product-item .btn {
+    margin-left: 28%;
+}
+/* --------------- TESTIMONIAL SECTION ---------------*/
+.testimonial {
+    background-image: linear-gradient(45deg, rgba(2, 33, 64, 0.85) 55%, rgb(45, 95, 93, 0.9)),
+        url(../image/background4.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.testimonial h2 {
+    padding-top: 50px;
+    margin-bottom: 30px;
+}
+blockquote {
+    font-style: italic;
+    line-height: 140%;
+    color: white;
+    position: relative;
+}
+cite {
+    display: block;
+    color: rgba(85, 121, 157, 0.85);
+}
+blockquote::before {
+    content: "\201C";
+    display: block;
+    font-size: 400%;
+    position: absolute;
+    left: -10px;
+    top: -10px;
+}
+blockquote cite img {
+    border-radius: 50%;
+    border: 2px solid white;
+    height: 50px;
+    vertical-align: middle;
+    margin-top: 10px;
+    margin-right: 5px;
+}
+
+/* --------------------SPONSORS SECTION ----------------*/
+
+.sponsors {
+    background: url(../image/hinh-nen-clb-manchester-united-full-hd-2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.sponsors h2 {
+    padding-top: 50px;
+    margin-bottom: 35px;
+}
+.sponsors-img {
+    transition: all 0.5s;
+    width: 140px;
+}
+.sponsors-item li {
+    list-style: none;
+    float: left;
+    width: 33.3%;
+    text-align: center;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+.sponsors-item li:hover .sponsors-img,
+.sponsors-item li:active .sponsors-img {
+    transform: scale(1.1);
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+/* ------------------CONTACT SECTION----------------- */
+.contacts {
+    background: linear-gradient(45deg, rgba(2, 33, 64, 0.85) 55%, rgb(45, 95, 93, 0.9)), url(../image/background4.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.contacts-infomation {
+    color: white;
+    margin-top: 60px;
+    list-style: none;
+    font-size: 95%;
+    line-height: 180%;
+}
+.contacts-infomation li i {
+    color: rgba(39, 137, 235, 0.85);
+    font-size: 18px;
+    margin-right: 5px;
+}
+.contacts-infomation li:hover i,
+.contacts-infomation li:active i {
+    transform: scale(1.3);
+}
+.contacts-work li {
+    display: inline-block;
+    margin-top: 40px;
+    margin-right: 8px;
+    text-align: center;
+    font-size: 200%;
+    color: white;
+}
+.contacts-work li i {
+    transition: all 0.4s;
+}
+.contacts-work li:hover i,
+.contacts-work li:active i {
+    color: #ff4f81;
+    transform: scale(1.2);
+    transition: all 0.4s;
+}
+form {
+    background-color: rgba(0, 0, 0, 0.4);
+    margin-left: 40%;
+    padding: 25px;
+    margin-top: 20px;
+}
+form .row {
+    margin-bottom: 8px;
+}
+form label {
+    color: #fff;
+    text-align: center;
+    font-size: 22px;
+}
+input,
+textarea {
+    outline: none;
+    padding: 10px;
+    background: rgba(48, 47, 47, 0.3);
+    border: 1px solid rgba(73, 73, 73, 0.6);
+    border-radius: 5px;
+}
+textarea {
+    resize: none;
+    height: 60px;
+}
+form .row:last-child {
+    text-align: center;
+}
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 80%;
+    font-size: 100%;
+}
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    color: white;
+    background-color: rgba(2, 33, 64, 0.85);
+}
+input[type="submit"] {
+    margin-top: 10px;
+    font-size: 75%;
+    width: 60%;
+    border-radius: 5px;
+}
+
+/* ------------------FOOTER---------------- */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: linear-gradient(45deg, rgba(2, 33, 64, 0.85) 55%, rgb(45, 95, 93, 0.9));
+    color: #ffffff88;
+}
+footer span {
+    color: #ff4f81;
+}
